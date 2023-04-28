@@ -1,5 +1,5 @@
 import React from "react";
-import { Onboarding } from "./pages";
+import { Onboarding, TodoPage } from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Login, Signup } from "./components";
 import Protected from "./services/Protected";
@@ -11,6 +11,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Protected />}>
           <Route path="/" element={<Onboarding />} />
+          <Route path="/todo" element={<TodoPage />} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />

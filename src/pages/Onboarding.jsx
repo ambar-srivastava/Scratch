@@ -28,12 +28,14 @@ const Onboarding = () => {
           style, and more
         </p>
         <div className=" flex gap-5 flex-wrap mt-10  font-bold text-lg">
-          <button
-            type="button"
-            className="bg-[#30BE76] border-2 border-[#30BE76] tracking-wide rounded-lg py-4 px-20 text-white"
-          >
-            Join Scratch
-          </button>
+          <Link to="/todo">
+            <button
+              type="button"
+              className="bg-[#30BE76] border-2 border-[#30BE76] tracking-wide rounded-lg py-4 px-20 text-white"
+            >
+              Todo List
+            </button>
+          </Link>
           <button
             type="button"
             onClick={handleLogout}
